@@ -41,7 +41,7 @@ void checkForImage() {
   video.loadPixels();
   try {
     // Make a BufferedImage out of the incoming bytes
-    BufferedImage img = ImageIO.read(bais);
+    BufferedImage img = ImageIO.read(bais); // <-------- BufferedImage e ImgegeIo sono le cose che non vanno
     // Put the pixels into the video PImage
     img.getRGB(0, 0, video.width, video.height, video.pixels, 0, video.width);
   } catch (Exception e) {
